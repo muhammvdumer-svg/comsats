@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CUI Timetable · Management Sciences</title>
+  <meta name="description" content="Fall 2026 class timetable for the Department of Management Sciences, COMSATS University Islamabad.">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%234f46e5'/><rect x='14' y='18' width='36' height='32' rx='5' fill='none' stroke='white' stroke-width='4'/><path d='M14 28h36M24 12v10M40 12v10' stroke='white' stroke-width='4' stroke-linecap='round'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">COMSATS University Islamabad</p>
+      <h1>Management Sciences Timetable</h1>
+      <p class="sub">Fall 2026 · effective 14 September 2026</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="panel controls">
+      <div class="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Search a course, teacher or room…" autocomplete="off">
+      </div>
+      <div class="chips" id="programs" role="tablist" aria-label="Program"></div>
+      <div class="sections" id="sections" aria-label="Section"></div>
+    </section>
+
+    <section id="view"></section>
+  </main>
+
+  <footer class="wrap foot">
+    Based on the official department timetable PDF. If something looks off, check with the department office.
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
